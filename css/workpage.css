@@ -1,0 +1,106 @@
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.section1,
+.section2,
+.section3,
+.section4,
+.section5 {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+}
+.section1::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../image/vasa.jpeg");
+  background-position: center;
+  background-size: cover;
+  transform: translateZ(-1px) scale(2.2);
+  filter: blur(0.3px);
+}
+
+.section2::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../image/Arttt.jpeg");
+  background-position: center;
+  background-size: cover;
+
+  filter: blur(0.3px);
+}
+.section3::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../image/car.jpeg");
+  background-position: center;
+  background-size: cover;
+  filter: blur(0.3px);
+}
+
+.section4::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../image/catsle.jpeg");
+  background-position: center;
+  background-size: cover;
+  filter: blur(0.3px);
+}
+.section5::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../image/art.jpeg");
+  background-position: center;
+  background-size: cover;
+  filter: blur(0.3px);
+}
+.text {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  font-size: 6vw;
+  color: white;
+  transform: scale(1, 1.1) translate(-50%, 10%);
+  text-decoration: underline white 3px;
+}
+
+h1 {
+  color: #c43232;
+  position: absolute;
+  top: 50px;
+  right: 250px;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0;
+}
+h2 {
+  color: #c43232;
+  position: absolute;
+  top: 50px;
+  right: 150px;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0;
+}
